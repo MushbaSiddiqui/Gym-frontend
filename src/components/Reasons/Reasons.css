@@ -1,0 +1,192 @@
+.Membership{
+display:flex;
+padding:2rem;
+gap:0rem;
+justify-content: center;
+align-items: center;
+}
+.left-m{
+    display:flex;
+    flex:1;
+    gap:3rem;
+}
+.animation-l{
+    display:flex;
+    flex-direction: column;
+}
+.animation-l>div>img{
+    width:16rem;
+    height:auto;
+    margin-top:-1.5rem;
+    margin-left:2rem;
+}
+.right-m{
+    display:flex;
+    flex:2;
+    flex-direction: column;
+}
+
+.right-m>:nth-child(1){
+    display: flex;
+font-size: 4.5rem;
+font-weight: bold;
+text-transform: uppercase;
+color:white;
+justify-content: center;
+}
+.right-m>:nth-child(2){
+    display: flex;
+    margin-top: 1rem;
+    font-size:3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:white;
+    justify-content: center;
+}
+.right-m>:nth-child(1)>:nth-child(2){
+    font-size: 4.2rem;
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+}
+.right-m>:nth-child(2)>:nth-child(1){
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+}
+.middle-m{
+    display:flex;
+    flex:1;
+    gap:3rem;
+}
+.animation-r{
+display:flex;
+flex-direction: column;
+}
+.animation-r>div>img{
+    width:16rem;
+    height:auto;
+    margin-top:-1.5rem;
+}
+.offers{
+    display:flex;
+    gap:1rem;
+    margin-top:3rem;
+    justify-content:center;
+    margin-left: -2.5rem;
+}
+li>:nth-child(1){
+fill:var(--orange);
+margin-right:0.5rem;
+}
+li{
+    justify-content: center;
+    font-family:sans-serif;
+    font-size:1.1rem;
+    color:white;
+    margin-left: 1.3rem;
+    margin-bottom:1rem;
+}
+
+.explore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.explore button{
+    width: fit-content;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    background-color: var(--orange);
+    border:transparent;
+    color: white;
+    padding:0.8rem;
+}
+.explore button:hover{
+    background-color: transparent;
+    color:white;
+    border:var(--orange) solid 1px;
+}
+
+@media screen and (max-width:768px){
+.Membership{
+    flex-wrap: wrap;
+    padding:1rem;
+    gap:0rem;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
+    }
+    .left-m{
+        flex:0;
+        gap:1rem;
+    }
+    .animation-l{
+        flex-direction: row;
+    }
+    .animation-l>div>img{
+        width:10rem;
+        height:auto;
+        margin-top:-1rem;
+        margin-left:1rem;
+    }
+    .middle-m{
+        flex:0;
+        gap:1rem;
+    }
+    .animation-r{
+        
+        margin-top: 3rem;
+        flex-direction: row;
+    }
+    .animation-r>div>img{
+        width:10rem;
+        height:auto;
+        margin-top:-1rem;
+        margin-left:1rem;
+    }
+    .right-m{
+        margin-top: 3.4rem;
+        flex:0;
+    }
+    .right-m>:nth-child(1){
+    font-size: 2.1rem;
+    }
+    .right-m>:nth-child(2){
+        margin-top: 0.8rem;
+        font-size:1.8rem;
+    }
+    .right-m>:nth-child(1)>:nth-child(2){
+        font-size: 2.1rem;
+        margin-top: 0.4rem;
+        margin-left: 0.8rem;
+    }
+    .right-m>:nth-child(2)>:nth-child(1){
+        margin-top: 0.3rem;
+        margin-right: 1rem;
+    }
+    .offers{
+        gap:0.2rem;
+        margin-top:1rem;
+        margin-left: -2.4rem;
+    }
+    li>:nth-child(1){
+    margin-right:0.2rem;
+    }
+    li{
+        font-size:0.7rem;
+        margin-left: 0rem;
+        margin-bottom:0.2rem;
+    }
+    .explore{
+        margin-top: 1rem;
+    }
+    .explore button{
+        font-size: 0.4rem;
+        padding:0.5rem;
+    }
+    .explore button:hover{
+        background-color: transparent;
+        color:white;
+        border:var(--orange) solid 1px;
+    }
+}

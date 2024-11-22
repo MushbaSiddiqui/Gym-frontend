@@ -1,0 +1,349 @@
+.hero{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.left-h{
+    display: flex;
+    padding:2.8rem;
+    padding-top: 0.05rem;
+    flex:3;
+    display:flex;
+    gap:2rem;
+    flex-direction: column;
+}
+.right-h{
+    flex:1;
+    background-color: var(--orange);
+    position: relative;
+}
+.scroll-ad{
+    margin-top: 4rem;
+    background-color: var(--darkgray);
+    border-radius: 4rem;
+    width:fit-content;
+    padding:20px 13px;
+    text-transform: uppercase;
+    color:white;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+}
+.scroll-ad>span{
+    position:relative;
+    z-index:3;
+}
+.scroll-ad>div{
+    position: absolute;
+    background-color: var(--orange);
+    height:80%;
+    width:5.4rem;
+    border-radius: 3rem;
+    left:8px;
+    top:0.4rem;
+    z-index:1;
+}
+.hero-heading{
+    display:flex;
+    flex-direction: column;
+    gap:0.8rem;
+    font-size:5.4rem;
+    font-weight:bold;
+    color:white;
+}
+.hero-heading>div:nth-of-type(3){
+    font-size: 1.2rem;
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    width:55%;
+}
+.figures{
+    display: flex;
+    gap:2rem;
+}
+.figures>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:10rem;
+    background-image: linear-gradient(rgba(126, 113, 113, 0.144), rgba(186, 183, 183, 0.03));
+}
+.figures>div:hover{
+    background-image: linear-gradient(rgba(248, 187, 127, 0.348), rgba(186, 183, 183, 0.03));
+}
+.figures>div>span:nth-of-type(1){
+    font-size: 2rem;
+    color:white;
+}
+.figures>div>span:nth-of-type(2){
+    font-size: 1rem;
+    color:var(--gray);
+    text-transform:uppercase;
+}
+.hero-buttons{
+    display:flex;
+    gap:2rem;
+}
+.btn{
+    background-color: white;
+    font-size: 1rem;
+    color: var(--orange);
+    font-weight: bold;
+    padding:0.5rem;
+    transition:300ms all;
+    align-items: center;
+    justify-content: center;
+    border:2px solid transparent;
+    position:absolute;
+    margin-top: 5vh;
+    margin-left: 16vw;
+    box-shadow: 0px 2px 3px 0px transparent;
+}
+.butn{
+    border:2px solid transparent;
+    background-color: var(--orange);
+    color:white; 
+    width:8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding:0.5rem;
+    transition:300ms all;
+    align-items: center;
+    justify-content: center;
+}
+.butnn{
+    background-color: transparent;
+    color:white;
+    border:2px solid var(--orange);
+    width:8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding:0.5rem;
+    transition:300ms all;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover{
+   cursor: pointer;
+}
+.heart-rate{
+    width:7rem;
+    height:8rem;
+    background-image: linear-gradient(rgba(96, 92, 92, 0.799), rgba(134, 129, 129, 0.845));
+    color:white;  
+    position:absolute;
+    margin-top: 24vh;
+    margin-left: 11vw;
+}
+.heart-rate img{
+    width:2.5rem;
+    height:auto;
+    padding:10px 34px;
+    justify-content: center;
+}
+.heart-rate>span{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heart-rate>span:nth-of-type(1){
+    color: whitesmoke;
+    font-size:0.8rem;
+    margin-bottom:0.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.heart-rate>span:nth-of-type(2){
+    color:white;
+    font-size:1.2rem;
+    font-weight:500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Hero-man{
+    display: flex;
+    position: relative;
+    justify-self: center;
+    align-items: center;
+}
+.right-h>.Hero-man>img{
+    position:absolute;
+    left:-29rem;
+    top:10.5rem;
+    width:42rem;
+    height:41rem;
+}
+.calorie{
+    display:flex;
+    width:fit-content;
+    height:5rem;
+    background-image: linear-gradient(rgba(96, 92, 92, 0.799), rgba(134, 129, 129, 0.845));
+    color: white;
+    padding: 1rem;
+    position: absolute;
+    right:30rem;
+    top:43rem;
+    z-index: 1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.calorie>.scale{
+    margin: 0.1rem;
+    width:0.5rem;
+    background-color:rgb(240, 122, 11);
+    height:4rem;
+    z-index: 2;
+}
+.calorie>.scale:nth-of-type(1){
+    height:2.5rem;
+    flex-direction: column-reverse;
+    margin-top:1.6rem;
+}
+.calorie>.scale:nth-of-type(3){
+    height:2rem;
+    flex-direction: column-reverse;
+    margin-top:2.1rem;
+}
+.calorie>.scale:nth-of-type(5){
+    height:3.3rem;
+    flex-direction: column-reverse;
+    margin-top:0.8rem;
+}
+.calorie>.scale:nth-of-type(6){
+    height:3rem;
+    flex-direction: column-reverse;
+    margin-top:1.1rem;
+}
+.calorie>.scale-head{
+    font-weight: bold;
+    margin-left: 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+@media screen and (max-width:768px){
+    .hero{
+        flex-direction: column;
+    }
+    .scroll-ad{
+        margin-top: 0.5rem;
+        font-size:0.7rem;
+        padding:1.5rem 2rem;
+    }
+    .scroll-ad>div{
+        margin-top:0.4rem;
+        height:60%;
+        width:4rem;
+    }
+    .right-h{ 
+    justify-content: center;
+    align-items: center;
+    }
+    .left-h{  
+    justify-content: center;
+    align-items: center;
+    }
+    .hero-heading{
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+    }
+    .hero-heading>div:nth-of-type(3){
+        font-size:0.7rem;
+        letter-spacing: 0px;
+         width:90%;
+    }
+    .figures{
+        gap:0.4rem;
+    }
+    .figures>div{
+        width:5.4rem;
+    }
+    .figures>div>span:nth-of-type(1){
+        font-size: 1rem;  
+    }
+    .figures>div>span:nth-of-type(2){
+        font-size: 0.5rem;  
+    }
+    .hero-buttons{
+        gap:1rem;
+    }
+    .btn{
+        font-size: 0.55rem;
+        font-weight: bold;
+        padding:0.3rem;
+    }
+    .hero-buttons>.btn:nth-of-type(1){
+        width:4.8rem;
+    }
+    .hero-buttons>.btn:nth-of-type(2){
+        width:4.8rem;
+    }
+    .heart-rate{
+        position: absolute;
+        top:-8rem;
+        right:1.5rem;
+        width:5rem;
+        height:6rem;
+    }
+    .heart-rate img{
+        width:1.5rem;
+        padding:9px 30px;
+        justify-content: center;
+    }
+    .heart-rate>span:nth-of-type(1){
+        font-size:0.7rem;
+        margin-bottom:0.6rem;
+    }
+    .heart-rate>span:nth-of-type(2){
+        font-size:1rem;
+    }
+    .right-h>.btn{
+        margin-top: 6vh;
+        margin-left: 10vw;
+    } 
+    .right-h>.Hero-man>img{
+        position:absolute;
+        left:-11rem;
+        top:6.2rem;
+        width:22rem;
+        height:21rem;
+    }
+    .calorie{
+        width:6rem;
+        height:3rem;
+        padding: 0.5rem;
+        right:19rem;
+        top:23rem;
+    }
+    .calorie>.scale{
+        margin: 0.08rem;
+        width:0.2rem;
+        height:2rem;
+        margin-top:0.5rem;
+    }
+    .calorie>.scale:nth-of-type(1){
+        height:1.5rem;
+        margin-top:1rem;
+    }
+    .calorie>.scale:nth-of-type(3){
+        height:0.9rem;
+        margin-top:1.6rem;
+    }
+    .calorie>.scale:nth-of-type(5){
+        height:1.3rem;
+        margin-top:1.2rem;
+    }
+    .calorie>.scale:nth-of-type(6){
+        height:0.8rem;
+        margin-top:1.7rem;
+    }
+    .calorie>.scale-head{
+        font-size:0.8rem;
+        font-weight: 200;
+        margin-left: 0.6rem;
+    }
+}

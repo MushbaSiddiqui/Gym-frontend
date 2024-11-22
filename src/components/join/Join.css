@@ -1,0 +1,225 @@
+.form{
+    display:flex;
+margin:2rem;
+padding: 2rem;
+/* background-color: aqua; */
+gap:4rem;
+}
+.right-s{
+    display: flex;
+    flex-direction: column;
+    flex:1.5;
+    background-color:var(--darkgray);
+    padding: 2rem 1rem;
+    width: fit-content;
+    height:auto;
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+    box-shadow: 0px 4px 6px 0px rgba(255, 166, 0, 0.766);
+}
+.left-s{
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex:2;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    gap:1.5rem;
+}
+.right-s>:nth-child(1){
+    display: flex;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--orange);
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+}
+.form-fields{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+input{
+    margin-top: 0.5rem;
+    width:95%;
+    border: 1px solid var(--lightgray);
+    padding: 0.5rem;
+    outline:rgb(213, 116, 12);
+    border-radius: 5px;
+}
+.field{
+    font-size: 0.9rem;
+    color:white;
+}
+.field-r{
+    font-size: 0.9rem;
+    color:white;
+    gap:0.5rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+.field-d{
+    font-size: 0.9rem;
+    color:white;
+}
+#select{
+    border: 1px solid var(--lightgray);
+    margin:0rem 1rem ;
+    outline: none;
+    padding:0.4rem;
+    color: var(--darkgray);
+    }
+.field-ds{
+    font-size: 0.9rem;
+    color:white;
+}
+#select-s{
+    border: 1px solid var(--lightgray);
+    margin:1rem 1rem ;
+    outline: none;
+    padding:0.4rem;
+    color: var(--darkgray);
+    }
+.fields-span{
+    display:flex;
+    gap:0.5rem;
+}
+.fields-span>:nth-child(2){
+    margin-left: 1rem;
+}
+.field-inline{
+    font-size: 0.9rem;
+    color:white;
+    padding-bottom:1rem;
+}
+.field-inline input{
+    width:6rem;
+}
+.field-r>:nth-child(2){
+    width:12px;
+    height:auto;
+}
+.field-r>:nth-child(3){
+    width:12px;
+    height:auto;
+}
+.buton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buton button{
+    font-size: 1rem;
+    background-color: var(--orange);
+    color: white;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+}
+.left-s>:nth-child(2){
+    margin-left: 3rem;
+}
+
+.left-s>:nth-child(3){
+    margin-left: 4.2rem;
+}
+.left-s>:nth-child(4){
+    margin-left: 7rem;
+}
+.form-fields p{
+    color:rgba(255, 0, 0, 0.43);
+}
+@media screen and (max-width:768px){
+    .form{
+        flex-direction: column;
+    margin-top:2rem;
+    padding: 1rem;
+    gap:3rem;
+    justify-content: center;
+    align-items: center;
+    }
+    .right-s{
+        flex:0;
+        padding: 1rem 0.5rem;
+        width: 21rem;
+        height:auto;
+        margin:0rem 0.5rem;
+        font-size: 0.5rem;
+    }
+    .left-s{
+        flex-wrap: wrap;
+        flex:0;
+        font-size: 2.1rem;
+        gap:1rem;
+    }  
+    .right-s>:nth-child(1){
+        font-size: 1.3rem;
+    }
+    .form-fields{
+        padding: 0.6rem;
+        margin: 0.2rem;
+    }
+    input{
+        margin-top: 0.3rem;
+        width:95%;
+        padding: 0.3rem;
+    }
+    .field{
+        font-size: 0.7rem;
+    }
+    .field-r{
+        font-size: 0.7rem;
+        gap:0.5rem;
+        margin-top: 0.5rem;
+    }
+    .field-d{
+        font-size: 0.7rem;
+    }
+    .fields-span{
+        gap:0.5rem;
+    }
+    .fields-span>:nth-child(2){
+        margin-left: 0.9rem;
+    }
+    .field-inline{
+        position: relative;
+        gap:0.5rem;
+        font-size: 0.7rem;
+        padding-bottom:1rem;
+    }
+    .field-inline input{
+        width:4.9rem;
+    }
+    #select{
+    margin:0rem 1rem ;
+    outline: none;
+    padding:0.4rem;
+    }
+    .field-r>:nth-child(2){
+        width:10px;
+        height:auto;
+    }
+    .field-r>:nth-child(3){
+        width:10px;
+        height:auto;
+    }
+    .butn button{
+        font-size: 0.7rem;
+        padding: 0.3rem 0.7rem;
+    }
+    .left-s>:nth-child(2){
+        margin-left: 1.5rem;
+    }
+    
+    .left-s>:nth-child(3){
+        margin-left: 2.2rem;
+    }
+    .left-s>:nth-child(4){
+        margin-left: 3rem;
+    }
+}

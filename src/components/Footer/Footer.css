@@ -1,0 +1,138 @@
+.main-footer{
+    width:100%;
+    height:13rem;
+    position:relative;
+    margin-top: 6rem;
+}
+.footer-line{
+    width:100%;
+    height: 0.5px;
+    position: absolute;
+    background-color: var(--lightgray);
+}
+.footer-details{
+    display: flex;
+    justify-content: center;
+    gap:7rem;
+    padding: 2rem;
+}
+.company{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    font-size: 0.9rem;
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color:var(--orange);
+}
+.contact{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap:0rem;
+}
+.company span{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color:white;
+}
+.contact>:nth-child(1){
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color:white;
+}
+.partners{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    color: white;
+    gap:0.3rem;
+}
+.partners>:nth-child(1){
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color:white;
+}
+.partners div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.partners>div>:nth-child(1){
+    width: 25px;
+    height:25px;
+    fill:white;
+    margin-bottom: -0.3rem;
+}
+.comming-soon>:nth-child(1){
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color:white;
+}
+.comming-soon div{
+    display: flex;
+    justify-content:center ;
+    padding-top: 1rem;
+}
+.comming-soon div>:nth-child(1){
+    width:25px;
+    height:25px;
+    fill:white
+}
+@media screen and (max-width:768px){
+    .main-footer{
+        height:10rem;
+        margin-top: 5rem;
+    }
+.footer-details{
+    gap:2.5rem;
+    padding: 1rem;
+}
+a{
+    font-size: 0.6rem;
+}
+.company span{
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+.contact{
+    font-size: 0.6rem;
+}
+.contact>:nth-child(1){
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+.partners{
+    font-size: 0.6rem;
+    gap:0.2rem;
+}
+.partners>:nth-child(1){
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+.partners>div>:nth-child(1){
+    width: 20px;
+    height:20px;
+    margin-bottom: -0.3rem;
+}
+.comming-soon>:nth-child(1){
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-bottom: 0.1rem;
+}
+.comming-soon div>:nth-child(1){
+    width:15px;
+    height:15px;
+}
+}
